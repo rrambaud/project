@@ -5,6 +5,10 @@
     <span>With syr-decimal-directive</span>
     <input type="text" name="syrDecimal" placeholder="syrDecimal" ng-model="syrDecimal" syr-decimal syr-decimal-part="3" syr-integer-part="9">
     <span>Is a valid decimal? {{myForm.syrDecimal.$valid}}--val {{syrDecimal}}</span>
+    <div>
+        <uib-timepicker name="syrTime" ng-model="myTime" ng-change="changed()" hour-step="1" minute-step="10" show-meridian="false" syr-nine></uib-timepicker>
+        <span>Are a minuts valid? {{myForm.syrTime.$valid}}--val {{syrTime}}</span>
+    </div>
 </form>
 
 

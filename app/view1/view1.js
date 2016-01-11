@@ -11,4 +11,5 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope', function($scope) {
     $scope.myDecimal = 1.2;
+    $scope.myTime = '2002-04-26T23:59:00+02:00'; 
 }]);
